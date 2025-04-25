@@ -14,13 +14,13 @@ Pastikan di project ini bisa menampilkan data dari salah satu/semua dari API di 
 
 
 ## Instruksi
-- FORK-kan project ini ke akun Github Anda. (5p)
+- FORK-kan project ini ke akun Github Anda.
 - Tidak diperbolehkan menggunakan AI untuk mengerjakan Uji Kompetensi ini.
-- Konsep arsitektur di Android harus menggunakan konsep MVVM (Model-View-ViewModel). (40p)
-- Jika menampilkan lebih dari satu data dari API, harap membuat tampilan main menu untuk memilih data yang akan ditampilkan. (15p)
-- Kreasikan tampilan sekreatif mungkin. (20p)
-- Data dari API bisa difilter, oleh karena itu sebisa mungkin menerapkan filter untuk data yang ditampilkan. (10p)
-- Menggunakan Jetpack Compose adalah nilai plus. (10p)
+- Konsep arsitektur di Android harus menggunakan konsep MVVM (Model-View-ViewModel).
+- Jika menampilkan lebih dari satu data dari API, harap membuat tampilan main menu untuk memilih data yang akan ditampilkan.
+- Kreasikan tampilan sekreatif mungkin.
+- Data dari API bisa difilter, oleh karena itu sebisa mungkin menerapkan filter untuk data yang ditampilkan.
+- Menggunakan Jetpack Compose adalah nilai plus.
 
 ## Pengumpulan
 - Dokumentasikan hasil pembuatan aplikasi di releases (APK)
