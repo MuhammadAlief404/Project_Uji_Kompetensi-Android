@@ -8,7 +8,6 @@ plugins {
     alias(libs.plugins.hiltApplication)
     alias(libs.plugins.kotlinParcelize)
     alias(libs.plugins.ksp)
-    alias(libs.plugins.kotlinCompose)
 }
 
 fun getLocalProperty(propName: String): Any? {

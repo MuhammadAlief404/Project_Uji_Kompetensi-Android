@@ -32,7 +32,7 @@ class MainViewModel @Inject constructor(
                     state = if (content.data.isNullOrEmpty()) {
                         state.copy(isEmpty = true)
                     } else {
-                        state.copy(data = content.data)
+                        state.copy(data = content.data!!)
                     }
                 }
 

@@ -4,7 +4,7 @@ import com.alieflab.core.domain.model.News
 import com.alieflab.core.domain.model.NewsDetail
 
 data class MainScreenState(
-    val data: List<NewsDetail> = emptyList(),
+    val data: List<NewsDetail?> = emptyList(),
     val isLoading: Boolean = false,
     val isEmpty: Boolean = false,
     val error: String = ""

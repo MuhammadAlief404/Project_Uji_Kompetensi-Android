@@ -10,6 +10,7 @@
  import androidx.compose.ui.Modifier
  import com.ramcosta.composedestinations.DestinationsNavHost
  import dagger.hilt.android.AndroidEntryPoint
+ import id.go.diskominfosamarinda.ui.news_screen.NavGraphs
  import id.go.diskominfosamarinda.ui.ui.theme.ProjectUjiKompetensiTheme
 
  @AndroidEntryPoint
