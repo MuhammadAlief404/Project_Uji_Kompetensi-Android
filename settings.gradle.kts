@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Project Uji Kompetensi"
 include(":app")
- 
+include(":core")

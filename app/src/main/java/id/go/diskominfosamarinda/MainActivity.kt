@@ -1,20 +1,31 @@
-package id.go.diskominfosamarinda
+ package id.go.diskominfosamarinda
 
-import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+ import android.os.Bundle
+ import androidx.activity.ComponentActivity
+ import androidx.activity.compose.setContent
+ import androidx.activity.enableEdgeToEdge
+ import androidx.compose.foundation.layout.fillMaxSize
+ import androidx.compose.foundation.layout.padding
+ import androidx.compose.material3.Scaffold
+ import androidx.compose.ui.Modifier
+ import com.ramcosta.composedestinations.DestinationsNavHost
+ import dagger.hilt.android.AndroidEntryPoint
+ import id.go.diskominfosamarinda.ui.ui.theme.ProjectUjiKompetensiTheme
 
-class MainActivity : AppCompatActivity() {
+ @AndroidEntryPoint
+class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+        setContent {
+            ProjectUjiKompetensiTheme {
+                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+                    DestinationsNavHost(
+                        navGraph = NavGraphs.root,
+                        modifier = Modifier.padding(innerPadding)
+                    )
+                }
+            }
         }
     }
 }
